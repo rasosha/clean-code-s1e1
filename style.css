@@ -39,7 +39,7 @@
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.task-to-add {
   display: flex;
 }
 
@@ -74,7 +74,7 @@ button {
 }
 
 /* Heading */
-.heading-small {
+.h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,7 +84,7 @@ button {
   text-transform: uppercase;
 }
 
-.task-input {
+.task-list__item__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,24 +97,24 @@ button {
   color: #888;
 }
 
-.task-input:focus {
+.task-list__item__input:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-label {
+.add-new-task__label {
   display: block;
   margin: 0 0 20px;
   cursor: default;
 }
 
-.new-task-input {
+.add-new-task__input {
   width: 318px;
   box-sizing: border-box;
 }
 
 /* Task list */
-.tasks-list-item {
+.tasks-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -123,51 +123,51 @@ button {
   align-items: center;
 }
 
-.tasks-list-item > * {
+.tasks-list__item > * {
   vertical-align: middle;
 }
 
-.tasks-list-item > .task-checkbox {
+.tasks-list__item > .task-checkbox {
   margin: 0 10px;
 }
 
-.tasks-list-item > .task-label {
+.tasks-list__item > .tasks-list__item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.tasks-list-item > .task-input {
+.tasks-list__item > .task-list__item__input {
   width: 226px
 }
 
-.btn-delete-img {
+.btn-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn-delete-img:hover {
+.btn-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+#completed-tasks .tasks-list__item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.tasks-list .tasks-list-item .task-input {
+.tasks-list .tasks-list__item .task-list__item__input {
   display: none
 }
 
-.tasks-list .tasks-list-item.edit-mode .task-input {
+.tasks-list .tasks-list__item.edit-mode .task-list__item__input {
   display: inline-block;
   width: 224px
 }
 
-.tasks-list .tasks-list-item.edit-mode .task-label {
+.tasks-list .tasks-list__item.edit-mode .tasks-list__item__label {
   display: none;
 }

@@ -14,33 +14,33 @@
 </head>
 
 <body class="body">
-  <div class="header">
+  <header class="header">
     <img src="./eisenhower-matrix.jpg" class="header-img">
     <a 
         class="header-link"
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
     </a>
-  </div>
-  <div class="main">
-    <p id="add-new-task">
-      <label for="new-task" class="heading-small new-task-label">
+  </header>
+  <main class="main">
+    <div id="add-new-task">
+      <p class="heading-small new-task-label">
         Add Item
-      </label>
+      </p>
       <div class="task-row-wrapper">
         <input id="new-task" class="task task-input new-task-input" type="text">
         <button class="btn btn-add">
           Add
         </button>
       </div>
-    </p>
+    </div>
     <h3 class="heading-small">Todo</h3>
     <ul id="incomplete-tasks" class="tasks-list">
       <li class="tasks-list-item">
         <input type="checkbox" class="task-checkbox">
-        <label class="task task-label">
+        <p class="task task-label">
           Pay Bills
-        </label>
+        </p>
         <input type="text" class="task task-input">
         <button class="btn btn-edit">
           Edit
@@ -51,9 +51,9 @@
       </li>
       <li class="edit-mode tasks-list-item">
         <input type="checkbox" class="task-checkbox">
-        <label class="task task-label">
+        <p class="task task-label">
           Go Shopping
-        </label>
+        </p>
         <input type="text" value="Go Shopping" class="task task-input">
         <button class="btn btn-edit">
           Save
@@ -67,9 +67,9 @@
     <ul id="completed-tasks" class="tasks-list">
       <li class="tasks-list-item">
         <input type="checkbox" class="task-checkbox" checked>
-        <label class="task task-label">
+        <p class="task task-label">
           See the Doctor
-        </label>
+        </p>
         <input type="text" class="task task-input">
         <button class="btn btn-edit">
           Edit
@@ -79,7 +79,7 @@
         </button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 

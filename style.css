@@ -10,6 +10,7 @@
   margin: 0 auto;
   display: block;
   text-align: right;
+  margin-bottom: 13px;
 }
 
 .header-img {
@@ -42,7 +43,8 @@
   display: flex;
 }
 
-ul {
+ul,
+p {
   margin: 0;
   padding: 0px;
 }
@@ -103,10 +105,12 @@ button {
 .new-task-label {
   display: block;
   margin: 0 0 20px;
+  cursor: default;
 }
 
 .new-task-input {
   width: 318px;
+  box-sizing: border-box;
 }
 
 /* Task list */
@@ -119,7 +123,7 @@ button {
   align-items: center;
 }
 
-.task-label {
+.tasks-list-item > * {
   vertical-align: middle;
 }
 
@@ -149,7 +153,7 @@ button {
 }
 
 /* Completed */
-.tasks-list #completed-tasks .task-label {
+#completed-tasks .task-label {
   text-decoration: line-through;
   color: #888;
 }

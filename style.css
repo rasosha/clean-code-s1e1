@@ -10,11 +10,12 @@
   margin: 0 auto;
   display: block;
   text-align: right;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 
 .header-img {
   width: 100%;
+  margin-bottom: -3px;
 }
 
 .header .header-link {
@@ -102,6 +103,9 @@ button {
 }
 
 /* New Task */
+#add-new-task {
+  margin-bottom: 16px;
+}
 .add-new-task__label {
   display: block;
   margin: 0 0 20px;
@@ -116,7 +120,7 @@ button {
 /* Task list */
 .tasks-list__item {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 19px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -127,7 +131,7 @@ button {
   vertical-align: middle;
 }
 
-.tasks-list__item > .task-checkbox {
+.tasks-list__item > .tasks-list__item__checkbox {
   margin: 0 10px;
 }
 

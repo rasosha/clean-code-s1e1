@@ -123,18 +123,18 @@ button {
   vertical-align: middle;
 }
 
-.tasks-list-item>.task-checkbox {
+.tasks-list-item > .task-checkbox {
   margin: 0 10px;
 }
 
-.tasks-list-item>.task-label {
+.tasks-list-item > .task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.tasks-list-item>.task-input {
+.tasks-list-item > .task-input {
   width: 226px
 }
 
